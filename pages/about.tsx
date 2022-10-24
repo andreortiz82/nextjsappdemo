@@ -1,17 +1,10 @@
 import Link from 'next/link'
-import { Container, Main, Title, Description } from '../components/sharedstyles'
+import Card from '../components/card'
 
 export default function About() {
   return (
-    <Container>
-      <Main>
-        <Title>About Page</Title>
-        <Description>
-          <Link href="/">
-            <a>&larr; Go Back</a>
-          </Link>
-        </Description>
-      </Main>
-    </Container>
+    <main>
+      <Card />
+    </main>
   )
 }
