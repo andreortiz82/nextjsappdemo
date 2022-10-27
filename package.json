@@ -6,12 +6,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "firebase": "^9.12.1",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@specifyapp/cli": "^1.1.1",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",

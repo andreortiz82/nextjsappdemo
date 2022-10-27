@@ -8,7 +8,10 @@ import {
 } from '../components/sharedstyles'
 import Cards from '../components/cards'
 
-export default function Home() {
+export default function Home({ logout, userSession, pageProps }) {
+  console.log("-----------------")
+  console.log(pageProps, userSession)
+
   return (
     <Container>
       <Head>
@@ -26,7 +29,7 @@ export default function Home() {
           <CodeTag>pages/index.tsx</CodeTag>
         </Description>
 
-        <Cards />
+        <Cards logout={logout} user={userSession.user} />
       </Main>
     </Container>
   )

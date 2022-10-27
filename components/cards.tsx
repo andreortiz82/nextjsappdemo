@@ -38,12 +38,17 @@ const StyledLink = ({ href, name }) => (
   </Link>
 )
 
-export default function Cards() {
+export default function Cards({ user, logout }) {
   return (
     <FlexContainer>
-      <Card>
-        <StyledLink href="/about" name="About Page &rarr;" />
-      </Card>
+      {(user.email
+        ?
+        <Card>
+          <div>{user.email}</div>
+          <a href="#" onClick={logout}>Logout</a>
+        </Card>
+        : <span></span>)}
+
     </FlexContainer>
   )
 }
